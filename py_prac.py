@@ -6,7 +6,6 @@ arr = [[0]*(w+1) for _ in range(h+1)]
 for _ in range(n):
     l, d, x, y = map(int, input().split())
     for i in range(l):
-        print(i)
         if d == 0:
             arr[x][y+i] = 1
         else:
