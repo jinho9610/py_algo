@@ -1,2 +1,10 @@
-a = [[0]*4 for _ in range(3)]
-print(a)
+x = 10
+
+
+def foo():
+    print(x)
+
+
+if __name__ == '__main__':
+    x = 5
+    foo()

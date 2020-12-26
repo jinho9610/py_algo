@@ -22,10 +22,10 @@ def dfs(x, y, color):
         return False
     else:
         c[x][y] = True  # 방문 처리
+        cnt += 1
         for i in range(4):
             nx, ny = x+dx[i], y+dy[i]
             if isInside(nx, ny) and c[nx][ny] == False and arr[nx][ny] == color:
-                cnt += 1
                 dfs(nx, ny, color)
         return True
 
@@ -33,7 +33,7 @@ def dfs(x, y, color):
 result = 0
 for i in range(7):
     for j in range(7):
-        cnt = 1
+        cnt = 0
         dfs(i, j, arr[i][j])
         if cnt >= 3:
             result += 1
