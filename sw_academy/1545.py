@@ -1,4 +1,4 @@
 n = int(input())
 
-for i in range(8, -1, -1):
+for i in range(n, -1, -1):
     print(i, end=' ')
