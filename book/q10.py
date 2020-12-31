@@ -119,10 +119,8 @@ def matrix_rotation(mat):
 
     return dummy
 
-# 자물쇠의 중간 부분이 모두 1인지 확인
 
-
-def check(new_lock):
+def check(new_lock):  # 자물쇠의 중간 부분이 모두 1인지 확인
     lock_length = len(new_lock) // 3
     for i in range(lock_length, lock_length*2):
         for j in range(lock_length, lock_length*2):
