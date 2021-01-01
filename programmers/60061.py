@@ -30,11 +30,3 @@ def solution(n, build_frame):
                 answer.append((x, y, a))
 
     return sorted(answer)
-
-
-a = [(1, 2)]
-
-a.append((3, 4))
-print(a)
-a.remove((1, 2))
-print(a)
