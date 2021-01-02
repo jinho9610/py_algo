@@ -28,9 +28,6 @@ def isRight(p):
         return True
 
 
-print(isRight(name))
-
-
 def solution(p):
     if p == '':
         return ''
